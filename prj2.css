@@ -1,0 +1,854 @@
+.car3pf {
+    border-radius: 100px;
+    overflow: hidden;
+    height: 150px;
+    width: 150px;
+  }
+  .carousel-caption{
+    top: 20%;
+    font-size: 16px;
+    font-weight: 200;
+    font-family: 'Courier New', Courier, monospace;
+   /* border: solid 2px red;*/
+    background-color: rgba(0, 0, 0, 0.082);
+    margin-bottom: 80px;
+  }
+  .carousel-caption p{
+    color: rgb(139, 139, 139);
+    font-weight: 100;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .carousel-caption h1{
+    color: rgb(139, 139, 139);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .carousel-item img{
+    width: 760px;
+    height: 400px;
+  }
+  .carousel-caption img{
+    height: auto;
+    width: auto;
+  }
+  .carousel {
+    margin-top: 15px;
+    width: 1202px;
+    height: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    box-shadow: 10px 10px 40px black inset;
+    margin-top: 1rem;
+  }
+   .slide{
+    margin-top: 60px;
+  }
+  .fb{
+      height: 250px;
+    /*  border-radius: 20px;*/
+      width: 250px;
+      margin-top: 20px;
+      border: transparent;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.377);
+      overflow: hidden;
+      text-align: center;
+      border: gray solid 4px;
+  }
+  .flex-row{
+    margin: 0px 124px;
+  }
+  .fb h3{
+    background:linear-gradient(black 0%,rgb(10, 10, 29) 100%);
+    border: 3px solid gray;
+  }
+  .heads{
+    color: white;
+    border-radius: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: auto auto;
+  }
+  .fb-para{
+    display: block;
+    height: 200px;
+  }
+  .fb p{
+   padding: 10px 10px;
+  /* border: solid gray 3px;*/
+   margin-top: 10px;
+  }
+  .insta img, .linkedin img, .facebook img, .twitter img{
+    height: 25px;
+    width: 25px;
+    color: black;
+    margin: 6px 6px;
+    left: 6px;
+    z-index: 2;
+  }
+  .sidebar{
+    position: fixed;
+    top: 20%;
+    left: 0%;
+    margin-left: 10px;
+    border: rgba(197, 165, 165, 0.144) solid 2px;
+    border-radius: 8px;
+    background-color: rgba(9,99,99,0.101);
+    
+  }
+  .sidebar a {
+  position: fixed;
+  left: 16px;
+  border: solid 2px yellow;
+  font-size: 1.7rem;
+  transform: translateY(20%);
+  height: 25px;
+  overflow: hidden;
+  width: 25px;
+  opacity: 0;
+  }
+  .start{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto;
+    margin-top: 4rem;
+    background: linear-gradient(rgb(248, 77, 10) 0%, rgb(250, 88, 22) 100%);
+    padding: 0.2rem;
+    width: 209.8;
+    box-sizing: border-box;
+    border: solid 2px orangered;
+   /* height: 40px;*/
+  }
+  
+  .go{
+    border: solid white 2px;
+    padding:0.1rem 0.65rem;
+    color: white;
+  }
+  .go-para{
+    text-align: center;
+    margin-left: 3px;
+    margin-top: 4px;
+  }
+  .go:hover{
+    background: linear-gradient(rgb(8, 8, 19) 0%,black 100%);
+    border: solid black 2px;
+  }
+  .go a{
+    text-decoration: none;
+    color: white;
+  }
+  .go a:hover{
+    text-decoration: none;
+    color: white;
+  }
+   body .signup_link{
+    border: 1px solid rgb(120, 196, 231);
+    color: rgb(120, 196, 231);
+    margin:15px auto;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .sign{
+    margin-right: 15px;
+  }
+  body .signup_link a:hover{
+  text-decoration: none;
+  color: white;
+  }
+  body .signup_link:hover{
+    color: white;
+  }
+  body .navbar{
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    z-index: 5;
+  }
+.signupdiv{
+    background-image: url(./images/specs-min.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100vw;
+    top: 7%;
+}
+
+.logindiv{
+  background-image: url(./darkwall.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  width: 100vw;
+  top: 7%;
+}
+.logindiv .no_account{
+  color: white;
+  text-align:center ;
+}
+/*.logindiv .not_account p{
+  color: white;
+}*/
+/* *************************************************signup_form************************************************** */
+
+body {
+	color: #fff;
+	background-image: #63738a;
+	font-family: 'Roboto', sans-serif;
+}
+.form-control {
+	height: 40px;
+	box-shadow: none;
+	color: #969fa4;
+}
+.form-control:focus {
+	border-color: #5cb85c;
+}
+.form-control, .btn {        
+	border-radius: 3px;
+}
+.signup-form {
+	width: 450px;
+	margin: 0 auto;
+	padding: 30px 0;
+  	font-size: 15px;
+}
+.signup-form h2 {
+	color: #636363;
+	margin: 0 0 15px;
+	position: relative;
+	text-align: center;
+}
+.signup-form h2:before, .signup-form h2:after {
+	content: "";
+	height: 2px;
+	width: 30%;
+	background: #d4d4d4;
+	position: absolute;
+	top: 50%;
+	z-index: 2;
+}	
+.signup-form h2:before {
+	left: 0;
+}
+.signup-form h2:after {
+	right: 0;
+}
+.signup-form .hint-text {
+	color: #999;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.signup-form form {
+	color: #999;
+	border-radius: 3px;
+	margin-bottom: 15px;
+	background: #f2f3f7;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	padding: 30px;
+}
+.signup-form .form-group {
+	margin-bottom: 20px;
+}
+.signup-form input[type="checkbox"] {
+	margin-top: 3px;
+}
+.signup-form .btn {        
+	font-size: 16px;
+	font-weight: bold;		
+	min-width: 140px;
+	outline: none !important;
+}
+.signup-form .row div:first-child {
+	padding-right: 10px;
+}
+.signup-form .row div:last-child {
+	padding-left: 10px;
+}    	
+.signup-form a {
+	color: #fff;
+	text-decoration: underline;
+}
+.signup-form a:hover {
+	text-decoration: none;
+}
+.signup-form form a {
+	color: #5cb85c;
+	text-decoration: none;
+}	
+.signup-form form a:hover {
+	text-decoration: underline;
+} 
+.alert2{
+  z-index: 7;
+  position: fixed;
+  top: 6%;
+  left: 3%;
+}
+.al-link:hover{
+text-decoration: none;
+color:rgb(3, 95, 18);
+border: solid green 1px;
+
+}
+.al-link{
+  color: #075a07;
+  border:grey 1px solid;
+  border: solid green 1px;
+  border-radius: 2px;
+  margin-left: 4px;
+  height: 130%;
+  display: inline-block;
+  padding: 4px;
+}
+.alert2{
+  width: 400px;
+  text-align: center;
+}
+
+
+
+/****************************************************ADD QUESTIONS 1 QUESTION FORM*************************************************************/
+.question_form {
+  width: 70vw;
+  border: #018501 solid 0px;
+  position: relative;
+  left: 14vw;
+  text-align: center;
+  margin-top: 10px;
+}
+.opset,.qset{
+  width:100% ;
+  margin-left: 10px;
+}
+.qset .form-control{
+  overflow: visible;
+}
+.question_form .form-control{
+  border: solid green 2px;
+  border-radius: 3px;
+}
+.question_form  .question_no{
+  display: inline-block;
+  color: rgb(248, 9, 9);
+  border-radius: 2px;
+}
+.question_form .question_no input{
+  width: 70px;
+  border: #db0819 2px solid;
+  border-radius: 2px;
+  text-align: right;
+}
+
+
+
+
+/*********************************************************LOGGED IN PAGE***********************************************************************/
+.userbox .userlogo img{
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+.userbox .userlogo{
+  display: inline-block;
+  margin-top: 0px;
+  height: 100%;
+  margin-right:6px ;
+  transform: translateY(-5%);
+}
+.logged_in_username{
+display: inline-block;
+color: rgb(189, 187, 187);
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+margin-top: 6px;
+margin-right: 100px;
+text-align: center;
+padding-bottom:0px;
+padding-top: 2px;
+}
+.logout-logo{
+  height: 25px;
+  width: auto;
+}
+.about-quiz{
+  text-align: center;
+  border:rgb(75, 69, 69) solid 2px;
+  margin-top: 5px;
+  width: 66%;
+  transform: translateX(24%);
+}
+.instructions{
+  width: 100%;
+  color: #018501;
+  text-align: left;
+  padding-left: 30px;
+  margin-top: 10px;
+}
+.instructions ol ul li{
+  list-style: none
+}
+.instructions ol ul{
+  margin-left: 10px;
+}
+.instructions ol li{
+  list-style: none;
+}
+.start_quiz{
+  text-align: center;
+  width: 66%;
+  transform: translateX(24%);
+}
+.accept_exam_policies{
+  margin: 10px auto;
+}
+/***********************************************************************QUESTION_PAGE*********************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+
+body {
+    background: teal
+}
+
+.wrapper {
+    max-width: 600px;
+    margin: 80px auto 50px;
+    padding: 30px;
+    border-radius: 20px;
+    background: #c0e2df;
+    position: relative;
+    min-height: 400px;
+    overflow: hidden
+}
+
+.wrapper .wrap {
+    width: 500px;
+    position: absolute;
+    left: 50px;
+    transition: 0.6s
+}
+
+#q2,
+#q3 {
+    left: 650px
+}
+
+.h4 {
+    margin: 0
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    cursor: pointer
+}
+
+.options {
+    position: relative;
+    padding-left: 30px
+}
+
+.options input {
+    opacity: 0
+}
+
+.checkmark {
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    height: 20px;
+    width: 20px;
+    background-color: #c0e2df;
+    border: 2px solid #444;
+    border-radius: 50%
+}
+
+.options input:checked~.checkmark:after {
+    display: block
+}
+
+.options .checkmark:after {
+    content: "";
+    width: 9px;
+    height: 9px;
+    display: block;
+    background: white;
+    position: absolute;
+    top: 51%;
+    left: 51%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 300ms ease-in-out 0s
+}
+
+.options input[type="radio"]:checked~.checkmark {
+    background: #590995;
+    border: 2px solid #590995;
+    transition: 300ms ease-in-out 0s
+}
+
+.options input[type="radio"]:checked~.checkmark:after {
+    transform: translate(-50%, -50%) scale(1)
+}
+
+.btn.btn-primary {
+    background-color: rgb(63, 139, 139);
+    border: 1px solid rgb(63, 139, 139)
+}
+
+.btn {
+    background-color: inherit;
+    border: 1px solid rgb(63, 139, 139);
+    border-radius: 20px
+}
+
+.btn:focus {
+    box-shadow: none
+}
+
+.btn:hover {
+    background-color: teal;
+    color: #fff
+}
+
+.fa-arrow-right,
+.fa-arrow-left {
+    transition: 0.2s ease-in all
+}
+
+.btn.btn-primary:hover .fa-arrow-right {
+    transform: translate(8px)
+}
+
+.btn.btn-primary:hover .fa-arrow-left {
+    transform: translate(-8px)
+}
+
+@media(max-width: 767px) {
+    .wrapper {
+        margin: 30px 10px;
+        height: 420px
+    }
+
+    .wrapper .wrap {
+        width: 280px;
+        left: 15px
+    }
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 28px;
+    background-color: inherit
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #590995;
+    -webkit-transition: .4s;
+    transition: .4s
+}
+
+input:checked+.slider {
+    background-color: #000
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3
+}
+
+input:checked+.slider:before {
+    transform: translateX(30px);
+    background-color: #fff
+}
+
+.slider.round {
+    border-radius: 34px
+}
+
+.slider.round:before {
+    border-radius: 50%
+}
+
+.dark-theme {
+    background-color: #222
+}
+
+/*************************************************QUESTION_PAGE***************************************************/
+ .question_container{
+   margin:20px ;
+  width:70%;
+  height: 100%;
+  background-color: #eafaff;
+  border-top-left-radius:15px ;
+  border-top-right-radius:15px ;
+}
+.save_buttons{
+  text-align: center;
+  margin: 50px;
+  z-index: 2;
+}
+body .question_container .question_text{
+  background-color: #eafaff;
+  color: rgb(7, 10, 17);
+  padding: 10px;
+  margin:0px ;
+  margin-top: -15px;
+  width: 100%;
+  border-radius:5px;
+}
+
+.checkbox-teal [type="checkbox"]:checked+label:before {
+  border-color: transparent #009688 #009688 transparent;
+}
+
+.checkbox-warning-filled [type="checkbox"][class*='filled-in']:checked+label:after {
+  border-color: #FF8800;
+  background-color: #FF8800;
+}
+
+.checkbox-rounded [type="checkbox"][class*='filled-in']+label:after {
+  border-radius: 50%;
+}
+
+.checkbox-living-coral-filled [type="checkbox"][class*='filled-in']:checked+label:after {
+  border-color: #FF6F61;
+  background-color: #FF6F61;
+}
+
+.checkbox-cerulean-blue-filled [type="checkbox"][class*='filled-in']:checked+label:after {
+  border-color: #92aad0;
+  background-color: #92aad0;
+}
+.form-check-input{
+  width: 450px;
+}
+.option_container{
+  width: 100%;
+  color: #009688;
+  height: 50px;
+ /* border: #222 solid 2px;*/
+  padding-top: 3px;
+}
+.coption{
+  width: 100%;
+}
+.question_navbar{
+  background-color: #0b223f;
+  color: rgb(195, 200, 247);
+  margin-bottom: 5px;
+  padding: 8px 0px;
+  border-top-left-radius:15px ;
+  border-top-right-radius:15px ;
+}
+.checks input{
+  visibility: 0%;
+}
+  /*bt-strap-question*/
+
+.funkyradio div {
+  clear: both;
+  overflow: hidden;
+}
+
+.funkyradio label {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #D1D3D4;
+  font-weight: normal;
+}
+
+.funkyradio input[type="radio"]:empty,
+.funkyradio input[type="checkbox"]:empty {
+  display: none;
+}
+
+.funkyradio input[type="radio"]:empty ~ label,
+.funkyradio input[type="checkbox"]:empty ~ label {
+  position: relative;
+  line-height: 2.5em;
+  text-indent: 3.25em;
+  margin-top: 2em;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.funkyradio input[type="radio"]:empty ~ label:before,
+.funkyradio input[type="checkbox"]:empty ~ label:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 2.5em;
+  background: #D1D3D4;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label {
+  color: rgb(136, 136, 136);
+  background-color: rgb(204, 246, 252);
+  box-shadow: 0px 0px 5px rgb(148, 219, 213);
+}
+
+.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label:before {
+  text-indent: .9em;
+  color: #C2C2C2;
+}
+
+.funkyradio input[type="checkbox"]:checked ~ label {
+  color: #777;
+  background-color: rgb(204, 246, 252);
+}
+
+.funkyradio input[type="checkbox"]:checked ~ label:before {
+  text-indent: .9em;
+  color: #333;
+  background-color: #ccc;
+}
+
+.funkyradio input[type="checkbox"]:focus ~ label:before {
+  box-shadow: 0 0 0 3px #999;
+}
+
+.funkyradio-default input[type="checkbox"]:checked ~ label:before {
+  color: #333;
+  background-color: #ccc;
+}
+
+.funkyradio-primary input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #337ab7;
+}
+.funkyradio{
+  height: 55px;
+  position: relative;
+  /*border: red 2px solid;*/
+  padding-top: 0px;
+  margin-top: 0px;
+  margin: 0px 10px;
+  
+
+}
+.opt{
+  border: solid green 2px;
+}
+.funkyradio input ,.funkyradio label{
+  margin-top: 0px;
+  height: 50px;
+  position: relative;
+  top: 5%;
+  transform: translateY(-77%);
+}
+.option{
+ /* border: solid rebeccapurple 2px;*/
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: inline;
+  height: 100%;
+  z-index: 3;
+  width: 50px;
+  padding-top: 8px;
+}
+
+
+
+.funkyradio-success input[type="radio"]:checked ~ label:before,
+.funkyradio-success input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #5cb85c;
+}
+
+.funkyradio-danger input[type="radio"]:checked ~ label:before,
+.funkyradio-danger input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #d9534f;
+}
+
+.funkyradio-warning input[type="radio"]:checked ~ label:before,
+.funkyradio-warning input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #f0ad4e;
+}
+
+.funkyradio-info input[type="radio"]:checked ~ label:before,
+.funkyradio-info input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #5bc0de;
+}
+
+/*************************************************************CALCULATOR SCREEN****************************************************************/
+
+
+
+/************************************************************* quiz_navbar***********************************************************************/
+
+.calc-btn input[type="button"]:checked ~ .calc-main{
+   display: hidden;
+}
+.question_navbar{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2px;
+ padding-right: 10px;
+}
+.calc-btn{
+  background:transparent;
+}
+.question_navbar .h5{
+ border: #018501 solid 2px;
+ padding: 6px;
+ margin-left: 10px;
+}
+.question_navbar .calc-time-btn{
+  margin-right: 10px;
+  transform: translateY(-4%);
+  background: transparent;
+}
+.calc_logo{
+  display: inline;
+ transform: translateX(-3%);
+
+}
+.calc_btn{
+  display: inline;
+  visibility: 0%;
+  background: transparent;
+  border: transparent;
+}
